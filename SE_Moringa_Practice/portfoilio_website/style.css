@@ -1,0 +1,417 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+  
+/* Google Font import — add to the very top of style.css */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500&display=swap');
+
+/* 6 columns, 9 spannables */
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-areas: 
+    'a a a a a a a a a'
+    'b b b b b c c c c'
+    'd d d e e e f f f'
+    'g g g g g g g g g'
+    'h h h h h h h h h'
+    'i i i i i i i i i'
+    ;
+    background-color: rgb(246, 240, 253);
+    color: black;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+#Navigation {
+    grid-area: a;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+    border-bottom-style: double;
+}
+#Navigation a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 15px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    display: flex;
+    margin-left: 50px;    
+    font-weight: 100;
+    text-decoration: none;
+}
+#Navigation a:hover {
+    color: #b24ff5;
+    background: #e8ccfa;
+}
+#Navigation a:last-child {
+    color: #b24ff5;
+    border: solid #e8ccfa;
+    background: #e8ccfa;
+}
+#Navigation a:last-child:hover {
+    color: #9b2ee4;
+    background: #d4afec;
+}
+#PortName {
+    margin-right: 40%;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 550;
+    color: #aa3bf5;
+    background: #e4bffc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-style:double;
+    border-radius: 16px;
+}
+
+
+
+#IntroHero {
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    align-items: center;
+    border-radius: 16px;
+}
+#IntroParaHead {
+    font-size: 30px;
+    font-weight: 400;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+}
+#IntroPara {
+    font-size: larger;
+    color: #676768;
+    margin-top: 1px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+
+
+#picIntro {
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+}
+
+
+
+#picProject1 {
+    grid-area: d;
+    display: flex;
+    flex-direction: column;  
+    margin-top: 20px; 
+    border-radius: 16px;
+    border-top: 2px solid rgb(142, 107, 153);
+    /* border: 2px solid rgb(142, 107, 153); */
+}
+#picProject1 img {
+    height: 400px;
+}
+#picProject1 blockquote {
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 16px;
+    background-color: #ead6f7;
+    font-size: 20px;
+    font-weight: 300;
+}
+#picProject1 a {
+    align-self: center;
+    border: solid #cab1db;
+    padding: 10px;
+    border-style: dotted;
+    margin-top: 20px;
+}
+#picProject1 button {
+    font-size: 15px;
+    padding: 10px;
+    background-color: #cfc1d8;
+}
+#picProject1 button:hover {
+    color: #1c1b1d;
+    background: #9061ad;
+}
+
+
+
+#picProject2 {
+    grid-area: e;
+    display: flex;
+    flex-direction: column;  
+    margin-top: 20px; 
+    border-radius: 16px;
+    border-top: 2px solid rgb(142, 107, 153);
+    /* border: 2px solid rgb(142, 107, 153); */
+}
+#picProject2 blockquote {
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 16px;
+    background-color: #ead6f7;
+    font-size: 20px;
+    font-weight: 300;
+}
+#picProject2 a {
+    align-self: center;
+    border: solid #cab1db;
+    padding: 10px;
+    border-style: dotted;
+    margin-top: 20px;
+}
+#picProject2 button {
+    font-size: 15px;
+    padding: 10px;
+    background-color: #cfc1d8;
+}
+#picProject2 button:hover {
+    color: #1c1b1d;
+    background: #9061ad;
+}
+
+
+
+#picProject3 {
+    grid-area: f;
+    display: flex;
+    flex-direction: column;  
+    margin-top: 20px; 
+    border-radius: 16px;
+    border-top: 2px solid rgb(142, 107, 153);
+    /* border: 2px solid rgb(142, 107, 153); */
+}
+#picProject3 img {
+    height: 400px;
+}
+#picProject3 blockquote {
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 16px;
+    background-color: #ead6f7;
+    font-size: 20px;
+    font-weight: 300;
+}
+#picProject3 a {
+    align-self: center;
+    border: solid #cab1db;
+    padding: 10px;
+    border-style: dotted;
+    margin-top: 20px;
+}
+#picProject3 button {
+    font-size: 15px;
+    padding: 10px;
+    background-color: #cfc1d8;
+}
+#picProject3 button:hover {
+    color: #1c1b1d;
+    background: #9061ad;
+}
+
+
+
+#projectsInfo {
+    grid-area: g;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5
+}
+#projectsInfoHead {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 550;
+    background-color: #eee9f1;
+    color: #aa3bf5;
+    border-radius: 20px;
+}
+#project1Head {
+    font-size: 25px;
+    font-weight: 650;
+}
+#project2Head {
+    font-size: 25px;
+    font-weight: 650;
+}
+#project3Head {
+    font-size: 25px;
+    font-weight: 650;
+}
+#project1Info {
+    text-align: center;
+    background-color: #eee9f1;
+    color: #58375c;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+#project2Info {
+    text-align: center;
+    background-color: #eee9f1;
+    color: #58375c;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+#project3Info {
+    text-align: center;
+    background-color: #eee9f1;
+    color: #58375c;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+#projectsInfo a:nth-of-type(1) {
+    font-size: 18px;
+    color: #58375c;
+    font-weight: 550;
+}
+#projectsInfo a:nth-of-type(1) {
+    font-size: 18px;
+    color: #58375c;
+    font-weight: 550;
+}
+#projectsInfo a:nth-of-type(1) {
+    font-size: 18px;
+    color: #58375c;
+    font-weight: 550;
+}
+#projectsInfo a:nth-of-type(1):hover{
+    color: #190120;
+    transition: .2s, color .2s;
+    transform: scale(1.05);
+    font-size: 20px;
+}
+#projectsInfo a:nth-of-type(2):hover{
+    color: #190120;
+    transition: .2s, color .2s;
+    transform: scale(1.05);
+    font-size: 20px;
+}
+#projectsInfo a:nth-of-type(3):hover{
+    color: #190120;
+    transition: .2s, color .2s;
+    transform: scale(1.05);
+    font-size: 20px;
+}
+
+
+
+#contactItems {
+    grid-area: h;
+    display: flex;
+    flex-direction: column;
+}
+#contactItems {
+    color: #fbf9fc;
+    background-color: #b79cc5;
+    margin-top: 20px;
+    border-radius: 16px;
+}
+#contactItems h2 {
+    font-size: 40px;
+    border: solid;
+    margin-bottom: 5px;
+    text-align:center;
+    border-radius: 50px;
+}
+#contactItems p {
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 540;
+    font-size: larger;
+    color: #4a4a4b;
+}
+#contactItems a:nth-of-type(1) {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding-left: 30%;
+    color: #58375c;
+    font-weight: 550;
+}
+#contactItems a:nth-of-type(2) {
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-left: 40%;
+    color: #58375c;
+    font-weight: 550;
+}
+#contactItems a:nth-of-type(3) {
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-left: 50%;
+    color: #58375c;
+    font-weight: 550;
+}
+#contactItems a:nth-of-type(1):hover{
+    background: #b79cc5;
+    color: #190120;
+    transition: .2s, color .2s;
+}
+#contactItems a:nth-of-type(2):hover{
+    background: #b79cc5;
+    color: #190120;
+    transition: .2s, color .2s;
+}
+#contactItems a:nth-of-type(3):hover{
+    background: #b79cc5;
+    color: #190120;
+    transition: .2s, color .2s;
+}
+
+
+
+#footerId {
+    grid-area: i;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    background-color: #9d8da8;
+    border-radius: 20px;
+}
+#footerId p {
+    text-align: right;
+    color: #e7d6f1;
+    font-weight: 800;
+}
+#footerId h3 {
+    margin-bottom: 0px;
+    margin-right: 65%;
+    color: #e7d6f1;
+    font-weight: bolder;
+}
+
+
+
+@media screen and (max-width: 768px){
+    #grid-container{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      'a a a a a a a a a '
+      'b b b b b b b b b'
+      'c c c c c c c c c'
+      'd d d d d d d d d'
+      'e e e e e e e e e'
+      'f f f f f f f f f'
+      'g g g g g g g g g'
+      'h h h h h h h h h'
+      'i i i i i i i i i'
+      ;
+    }
+  }
